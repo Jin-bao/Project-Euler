@@ -45,7 +45,7 @@ data = list(map(int, data.split()))
 # 或者 data = [int(item) for item in data.split()]
 data = [data[i:i+int(sqrt(len(data)))] for i in range(0,len(data),int(sqrt(len(data))))]
 
-print(max(hProd(data, 4)))
+print(max(hProd(data, 4)))# 第二个参数是连续多少个数的乘积
 print(max(vProd(data, 4)))
 print(max(mainDProd(data, 4)))
 print(max(subDProd(data, 4)))
