@@ -1,0 +1,83 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2444,         75]
+NotebookOptionsPosition[      1864,         56]
+NotebookOutlinePosition[      2276,         73]
+CellTagsIndexPosition[      2233,         70]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+\:5728\:5c0f\:4e8e 10 \:7684\:81ea\:7136\:6570\:4e2d\:ff0c3 \:6216 5 \:7684\
+\:500d\:6570\:67093\:30015\:30016 \:548c \
+9\:ff0c\:8fd9\:4e9b\:6570\:4e4b\:548c\:662f23\:3002\:6c42\:5c0f\:4e8e 1000 \
+\:7684\:81ea\:7136\:6570\:4e2d\:6240\:6709 3 \:6216 5 \
+\:7684\:500d\:6570\:4e4b\:548c\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.868668840117203*^9, 
+  3.8686688804628773`*^9}},ExpressionUUID->"9a90b13e-aa68-4a1d-93d0-\
+2aa8ebb1b64c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"List", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{"3", ",", "999", ",", "3"}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{"5", ",", "999", ",", "5"}], "]"}]}], "]"}], "//", "Flatten"}],
+    "//", "DeleteDuplicates"}], "//", "Total"}]], "Input",
+ CellChangeTimes->{{3.8685910731229925`*^9, 3.8685911016509533`*^9}, {
+  3.868591142980425*^9, 3.8685912000221543`*^9}, {3.868591231128784*^9, 
+  3.868591255052876*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"1c22188f-c65d-4f0c-8b5a-0e768841050e"],
+
+Cell[BoxData["233168"], "Output",
+ CellChangeTimes->{
+  3.8685912011891994`*^9, {3.8685912442732725`*^9, 3.8685912558819866`*^9}, 
+   3.868592038694609*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"ebe1153c-55d7-44a5-ac08-2608ad7bcf06"]
+}, Open  ]]
+},
+WindowSize->{595, 652},
+WindowMargins->{{Automatic, 6}, {160, Automatic}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"92f9bfd8-3860-4fcf-a600-ee956a840180"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 441, 9, 65, "Text",ExpressionUUID->"9a90b13e-aa68-4a1d-93d0-2aa8ebb1b64c"],
+Cell[CellGroupData[{
+Cell[1024, 33, 587, 14, 91, "Input",ExpressionUUID->"1c22188f-c65d-4f0c-8b5a-0e768841050e"],
+Cell[1614, 49, 234, 4, 37, "Output",ExpressionUUID->"ebe1153c-55d7-44a5-ac08-2608ad7bcf06"]
+}, Open  ]]
+}
+]
+*)
+
