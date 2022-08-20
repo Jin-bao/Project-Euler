@@ -1,5 +1,4 @@
 def numName(num:int) -> str:
-  name = 'numName'
   preName = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty']
   if 0<=num & num<=20:
     name = preName[num]
