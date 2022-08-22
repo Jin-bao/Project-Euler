@@ -1,6 +1,4 @@
-import time
-
-def Collatz(num):
+def Collatz(num:int, CollatzDict:dict={}) -> int:
   if num in CollatzDict:
     return CollatzDict[num]
   if num == 1:
@@ -12,12 +10,10 @@ def Collatz(num):
   elif num%2 == 1:
     CollatzDict[num] = Collatz(3*num+1)+1
     return CollatzDict[num]
+  return 0
 
-begin = time.time()
-CollatzDict = {}
 maxNum = 1000000
 sequenceNumList = []
 for i in range(1,maxNum):
   sequenceNumList.extend([[Collatz(i),i]])
-end = time.time()
-print(end-begin, sorted(sequenceNumList, key=lambda sNL:sNL[0])[-1])
+print(sorted(sequenceNumList, key=lambda sNL:sNL[0])[-1])
