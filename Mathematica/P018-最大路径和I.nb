@@ -1,0 +1,194 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6230,        186]
+NotebookOptionsPosition[      5641,        167]
+NotebookOutlinePosition[      6055,        184]
+CellTagsIndexPosition[      6012,        181]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"numList", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", "75", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"95", ",", "64"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", "47", ",", "82"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", "35", ",", "87", ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", "4", ",", "82", ",", "47", ",", "65"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", "1", ",", "23", ",", "75", ",", "3", ",", "34"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "88", ",", "2", ",", "77", ",", "73", ",", "7", ",", "63", ",", "67"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "99", ",", "65", ",", "4", ",", "28", ",", "6", ",", "16", ",", "70", 
+       ",", "92"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "41", ",", "41", ",", "26", ",", "56", ",", "83", ",", "40", ",", "80", 
+       ",", "70", ",", "33"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "41", ",", "48", ",", "72", ",", "33", ",", "47", ",", "32", ",", "37", 
+       ",", "16", ",", "94", ",", "29"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "53", ",", "71", ",", "44", ",", "65", ",", "25", ",", "43", ",", "91", 
+       ",", "52", ",", "97", ",", "51", ",", "14"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "70", ",", "11", ",", "33", ",", "28", ",", "77", ",", "73", ",", "17", 
+       ",", "78", ",", "39", ",", "68", ",", "17", ",", "57"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "91", ",", "71", ",", "52", ",", "38", ",", "17", ",", "14", ",", "91", 
+       ",", "43", ",", "58", ",", "50", ",", "27", ",", "29", ",", "48"}], 
+      "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "63", ",", "66", ",", "4", ",", "68", ",", "89", ",", "53", ",", "67", 
+       ",", "30", ",", "73", ",", "16", ",", "69", ",", "87", ",", "40", ",", 
+       "31"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "4", ",", "62", ",", "98", ",", "27", ",", "23", ",", "9", ",", "70", 
+       ",", "98", ",", "73", ",", "93", ",", "38", ",", "53", ",", "60", ",", 
+       "4", ",", "23"}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8707327801366673`*^9, 3.870732790866866*^9}, 
+   3.8707335633415933`*^9},
+ CellLabel->
+  "In[147]:=",ExpressionUUID->"fe6e499b-7450-469a-b926-68c81a39d058"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"PathSum", "[", 
+    RowBox[{"1", ",", "1"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"PathSum", "[", 
+     RowBox[{"1", ",", "1"}], "]"}], "=", 
+    RowBox[{"numList", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ",", "1"}], "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PathSum", "[", 
+    RowBox[{"i_", ",", "1"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"PathSum", "[", 
+     RowBox[{"i", ",", "1"}], "]"}], "=", 
+    RowBox[{
+     RowBox[{"PathSum", "[", 
+      RowBox[{
+       RowBox[{"i", "-", "1"}], ",", "1"}], "]"}], "+", 
+     RowBox[{"numList", "[", 
+      RowBox[{"[", 
+       RowBox[{"i", ",", "1"}], "]"}], "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PathSum", "[", 
+    RowBox[{"i_", ",", "i_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"PathSum", "[", 
+     RowBox[{"i", ",", "i"}], "]"}], "=", 
+    RowBox[{
+     RowBox[{"PathSum", "[", 
+      RowBox[{
+       RowBox[{"i", "-", "1"}], ",", 
+       RowBox[{"i", "-", "1"}]}], "]"}], "+", 
+     RowBox[{"numList", "[", 
+      RowBox[{"[", 
+       RowBox[{"i", ",", "i"}], "]"}], "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"PathSum", "[", 
+    RowBox[{"i_", ",", "j_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"PathSum", "[", 
+     RowBox[{"i", ",", "j"}], "]"}], "=", 
+    RowBox[{
+     RowBox[{"Max", "[", 
+      RowBox[{
+       RowBox[{"PathSum", "[", 
+        RowBox[{
+         RowBox[{"i", "-", "1"}], ",", 
+         RowBox[{"j", "-", "1"}]}], "]"}], ",", 
+       RowBox[{"PathSum", "[", 
+        RowBox[{
+         RowBox[{"i", "-", "1"}], ",", "j"}], "]"}]}], "]"}], "+", 
+     RowBox[{"numList", "[", 
+      RowBox[{"[", 
+       RowBox[{"i", ",", "j"}], "]"}], "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Max", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"PathSum", "[", 
+     RowBox[{"15", ",", "i"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "15"}], "}"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8707335556837196`*^9, 3.8707335593394794`*^9}, {
+  3.8707336021842003`*^9, 3.870733839485912*^9}, {3.870733946643879*^9, 
+  3.8707340468567743`*^9}, {3.870734088142428*^9, 3.870734119601832*^9}, {
+  3.870734429478465*^9, 3.8707344716411858`*^9}, {3.8707345067383895`*^9, 
+  3.87073450703529*^9}, {3.870740787434761*^9, 3.8707407896033745`*^9}},
+ CellLabel->
+  "In[148]:=",ExpressionUUID->"a25b99e4-b87a-401d-a272-217108317386"],
+
+Cell[BoxData["1074"], "Output",
+ CellChangeTimes->{3.870740803594164*^9},
+ CellLabel->
+  "Out[152]=",ExpressionUUID->"800da8ac-e77d-4cbe-8824-20e50749a5df"]
+}, Open  ]]
+},
+WindowSize->{590, 653},
+WindowMargins->{{487, Automatic}, {Automatic, 136}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d7b7a75b-da74-43bd-8efe-53f4939c0521"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2382, 59, 241, "Input",ExpressionUUID->"fe6e499b-7450-469a-b926-68c81a39d058"],
+Cell[CellGroupData[{
+Cell[2965, 83, 2501, 76, 252, "Input",ExpressionUUID->"a25b99e4-b87a-401d-a272-217108317386"],
+Cell[5469, 161, 156, 3, 59, "Output",ExpressionUUID->"800da8ac-e77d-4cbe-8824-20e50749a5df"]
+}, Open  ]]
+}
+]
+*)
+
