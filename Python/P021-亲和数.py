@@ -7,6 +7,7 @@ def dn(num:int) -> int:
     if num%i == 0:
       numDi = int(num/i)
       divisorList.extend([i, numDi])
+  divisorList = list(set(divisorList))
   divisorList.remove(max(divisorList))# 最大值有多个只会删一个
   return sum(divisorList)
 
@@ -16,7 +17,7 @@ for i in range(2, upLimit+1):
   dni = dn(i)
   dndni = dn(dn(i))
   if i==dndni and i!=dni:
-    if dni > 10000:
+    if dni > upLimit:
       amicableNumList.extend([i])
     else:
       amicableNumList.extend([i, dni])
