@@ -1,0 +1,74 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1944,         64]
+NotebookOptionsPosition[      1454,         46]
+NotebookOutlinePosition[      1867,         63]
+CellTagsIndexPosition[      1824,         60]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"NestWhile", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"#", "+", "1"}], "&"}], ",", "1", ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"IntegerLength", "[", 
+      RowBox[{"Fibonacci", "[", "#", "]"}], "]"}], "<", "1000"}], "&"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.870748461432147*^9, 3.870748470795142*^9}, 
+   3.870748853006025*^9, {3.870748958224615*^9, 3.870749037897377*^9}, {
+   3.870749178652252*^9, 3.8707491802473245`*^9}, {3.870749283837637*^9, 
+   3.8707493055747156`*^9}},
+ CellLabel->
+  "In[234]:=",ExpressionUUID->"dd327021-8e82-44de-95d6-95f8f5419e05"],
+
+Cell[BoxData["4782"], "Output",
+ CellChangeTimes->{{3.870749029306677*^9, 3.8707490391640997`*^9}, 
+   3.8707491817181597`*^9, {3.8707492871995134`*^9, 3.870749306528535*^9}},
+ CellLabel->
+  "Out[234]=",ExpressionUUID->"4d273e7c-8f11-4f59-a3ff-3604d66619ad"]
+}, Open  ]]
+},
+WindowSize->{590, 653},
+WindowMargins->{{Automatic, 114}, {Automatic, 69}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f49fb14e-3a90-4dcc-94d6-1bdd521ea91b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 597, 15, 50, "Input",ExpressionUUID->"dd327021-8e82-44de-95d6-95f8f5419e05"],
+Cell[1180, 39, 258, 4, 59, "Output",ExpressionUUID->"4d273e7c-8f11-4f59-a3ff-3604d66619ad"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

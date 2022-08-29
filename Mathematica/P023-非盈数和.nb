@@ -1,0 +1,87 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2495,         79]
+NotebookOptionsPosition[      2002,         61]
+NotebookOutlinePosition[      2416,         78]
+CellTagsIndexPosition[      2373,         75]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Select", "[", 
+      RowBox[{
+       RowBox[{"Range", "[", "28123", "]"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"DivisorSigma", "[", 
+          RowBox[{"1", ",", "#"}], "]"}], ">", 
+         RowBox[{"2", "#"}]}], "&"}]}], "]"}], "//", 
+     RowBox[{
+      RowBox[{"Tuples", "[", 
+       RowBox[{"#", ",", "2"}], "]"}], "&"}]}], "//", 
+    RowBox[{
+     RowBox[{"Total", "/@", "#"}], "&"}]}], "//", 
+   RowBox[{
+    RowBox[{"Complement", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", "28123", "]"}], ",", "#"}], "]"}], "&"}]}], "//", 
+  "Total"}]], "Input",
+ CellChangeTimes->{{3.8707466541693497`*^9, 3.870746654857664*^9}, {
+  3.8707467215379176`*^9, 3.87074677316477*^9}, {3.870746814283783*^9, 
+  3.87074684218078*^9}, {3.870747118225198*^9, 3.870747140572155*^9}, {
+  3.870747190467739*^9, 3.8707472075030036`*^9}, {3.87074766734092*^9, 
+  3.870747729757406*^9}, {3.8707477671958585`*^9, 3.87074777186862*^9}, {
+  3.870747854888177*^9, 3.8707478801842165`*^9}, {3.870748036168579*^9, 
+  3.8707480423316355`*^9}, {3.8707480768474436`*^9, 3.8707481150863185`*^9}},
+ CellLabel->
+  "In[223]:=",ExpressionUUID->"11cf99eb-f698-4eac-89b2-55106ecc57e7"],
+
+Cell[BoxData["4179871"], "Output",
+ CellChangeTimes->{3.870748122620656*^9},
+ CellLabel->
+  "Out[223]=",ExpressionUUID->"f3aad851-d0f5-483f-b31d-f173bcc6efef"]
+}, Open  ]]
+},
+WindowSize->{590, 653},
+WindowMargins->{{Automatic, 105}, {Automatic, 108}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d5cf550f-6f7c-4252-985b-96f876fa9ad9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1244, 31, 132, "Input",ExpressionUUID->"11cf99eb-f698-4eac-89b2-55106ecc57e7"],
+Cell[1827, 55, 159, 3, 59, "Output",ExpressionUUID->"f3aad851-d0f5-483f-b31d-f173bcc6efef"]
+}, Open  ]]
+}
+]
+*)
+

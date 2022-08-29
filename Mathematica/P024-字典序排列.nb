@@ -1,0 +1,69 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1730,         59]
+NotebookOptionsPosition[      1239,         41]
+NotebookOutlinePosition[      1653,         58]
+CellTagsIndexPosition[      1610,         55]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Permutations", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "0", ",", "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", 
+      "7", ",", "8", ",", "9"}], "}"}], "]"}], "[", 
+   RowBox[{"[", "1000000", "]"}], "]"}], "//", "FromDigits"}]], "Input",
+ CellChangeTimes->{{3.8707482438291473`*^9, 3.8707482992124157`*^9}},
+ CellLabel->
+  "In[225]:=",ExpressionUUID->"f9636e07-dcec-46e9-88f8-cb7ae6c95c68"],
+
+Cell[BoxData["2783915460"], "Output",
+ CellChangeTimes->{{3.870748284597803*^9, 3.870748300635873*^9}},
+ CellLabel->
+  "Out[225]=",ExpressionUUID->"5edaaeeb-bb7e-4304-86ab-d0111a48a702"]
+}, Open  ]]
+},
+WindowSize->{590, 653},
+WindowMargins->{{Automatic, 108}, {Automatic, 143}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a17b8cc3-0ca7-4363-8a9e-8e3f560a1be6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 454, 11, 91, "Input",ExpressionUUID->"f9636e07-dcec-46e9-88f8-cb7ae6c95c68"],
+Cell[1037, 35, 186, 3, 59, "Output",ExpressionUUID->"5edaaeeb-bb7e-4304-86ab-d0111a48a702"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

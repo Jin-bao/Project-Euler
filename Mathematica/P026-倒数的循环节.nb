@@ -1,0 +1,73 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1862,         65]
+NotebookOptionsPosition[      1371,         47]
+NotebookOutlinePosition[      1785,         64]
+CellTagsIndexPosition[      1742,         61]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"RealDigits", "[", 
+        RowBox[{"1", "/", "i"}], "]"}], "//", "First"}], "//", 
+      RowBox[{
+       RowBox[{"Length", "/@", "#"}], "&"}]}], "//", "Max"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "999"}], "}"}]}], "]"}], "//", 
+  "Max"}]], "Input",
+ CellChangeTimes->{{3.87075070689592*^9, 3.8707507071147103`*^9}, {
+  3.8707516095297694`*^9, 3.8707517033602953`*^9}},
+ CellLabel->
+  "In[243]:=",ExpressionUUID->"fd7a8edc-605b-40eb-9c31-f6bab6258a96"],
+
+Cell[BoxData["982"], "Output",
+ CellChangeTimes->{{3.8707517041420035`*^9, 3.870751712864088*^9}},
+ CellLabel->
+  "Out[243]=",ExpressionUUID->"c20b2c02-bdca-4987-aa08-8bde54f439c0"]
+}, Open  ]]
+},
+WindowSize->{590, 653},
+WindowMargins->{{Automatic, 105}, {Automatic, 130}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b33d06e2-5a01-4789-be6f-6c68def6536c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 591, 17, 91, "Input",ExpressionUUID->"fd7a8edc-605b-40eb-9c31-f6bab6258a96"],
+Cell[1174, 41, 181, 3, 59, "Output",ExpressionUUID->"c20b2c02-bdca-4987-aa08-8bde54f439c0"]
+}, Open  ]]
+}
+]
+*)
+
