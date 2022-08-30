@@ -1,0 +1,74 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2123,         66]
+NotebookOptionsPosition[      1632,         48]
+NotebookOutlinePosition[      2046,         65]
+CellTagsIndexPosition[      2003,         62]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Tuples", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{"2", ",", "100"}], "]"}], ",", "2"}], "]"}], "//", 
+    RowBox[{
+     RowBox[{"Power", "@@@", "#"}], "&"}]}], "//", 
+   RowBox[{
+    RowBox[{"Union", "[", "#", "]"}], "&"}]}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.870821594832479*^9, 3.870821794677969*^9}, {
+  3.87082184068441*^9, 3.870821842183404*^9}, {3.8708219240508103`*^9, 
+  3.8708219308983483`*^9}, {3.870822047390569*^9, 3.8708220483284965`*^9}, {
+  3.8708221763889933`*^9, 3.8708222495644217`*^9}},
+ CellLabel->"In[95]:=",ExpressionUUID->"c02b604c-d7a3-4305-aff7-52bd0bc8eda3"],
+
+Cell[BoxData["9183"], "Output",
+ CellChangeTimes->{
+  3.8708216081515207`*^9, {3.8708216452477217`*^9, 3.870821674964996*^9}, {
+   3.87082170579229*^9, 3.8708217830314603`*^9}, 3.870821931758049*^9, 
+   3.870822049141858*^9, {3.870822189452856*^9, 3.870822250549391*^9}},
+ CellLabel->"Out[95]=",ExpressionUUID->"89389aee-40f9-4903-8ff3-025bee8bd86b"]
+}, Open  ]]
+},
+WindowSize->{590, 653},
+WindowMargins->{{Automatic, 128}, {Automatic, 134}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1c71a1c7-985a-41bc-b501-c05588d6f236"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 683, 16, 91, "Input",ExpressionUUID->"c02b604c-d7a3-4305-aff7-52bd0bc8eda3"],
+Cell[1266, 40, 350, 5, 37, "Output",ExpressionUUID->"89389aee-40f9-4903-8ff3-025bee8bd86b"]
+}, Open  ]]
+}
+]
+*)
+
