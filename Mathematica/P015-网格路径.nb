@@ -10,37 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2200,         76]
-NotebookOptionsPosition[      1618,         57]
-NotebookOutlinePosition[      2031,         74]
-CellTagsIndexPosition[      1988,         71]
+NotebookDataLength[      1533,         54]
+NotebookOptionsPosition[      1045,         36]
+NotebookOutlinePosition[      1458,         53]
+CellTagsIndexPosition[      1415,         50]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{"https", ":"}], "//", 
-    RowBox[{"pe", "-", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"cn", ".", "github", ".", "io"}], "/", "15"}], "/"}]}]}], 
-   "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"https", ":"}], "//", 
-     RowBox[{
-      RowBox[{"projecteuler", ".", "net"}], "/", "problem"}]}], "=", "15"}], 
-   "*)"}]}]], "Input",
- CellChangeTimes->{{3.869114472148347*^9, 
-  3.8691144839243298`*^9}},ExpressionUUID->"c404399e-f812-46b7-8494-\
-7e5dc0f87546"],
 
 Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"Binomial", "[", 
   RowBox[{"40", ",", "20"}], "]"}]], "Input",
@@ -56,7 +35,7 @@ Cell[BoxData["137846528820"], "Output",
 }, Open  ]]
 },
 WindowSize->{590, 653},
-WindowMargins->{{Automatic, 13}, {Automatic, 102}},
+WindowMargins->{{204, Automatic}, {Automatic, 13}},
 FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
 \:65e5)",
 StyleDefinitions->"Default.nb",
@@ -73,10 +52,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 570, 19, 60, "Input",ExpressionUUID->"c404399e-f812-46b7-8494-7e5dc0f87546"],
 Cell[CellGroupData[{
-Cell[1153, 43, 235, 5, 50, "Input",ExpressionUUID->"c4322213-3926-4b64-bcfa-e13afa3fd8c1"],
-Cell[1391, 50, 211, 4, 59, "Output",ExpressionUUID->"fa688c44-90e0-43ed-ac97-2ce8a48ba10f"]
+Cell[580, 22, 235, 5, 50, "Input",ExpressionUUID->"c4322213-3926-4b64-bcfa-e13afa3fd8c1"],
+Cell[818, 29, 211, 4, 37, "Output",ExpressionUUID->"fa688c44-90e0-43ed-ac97-2ce8a48ba10f"]
 }, Open  ]]
 }
 ]
