@@ -1,0 +1,109 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3347,        101]
+NotebookOptionsPosition[      2763,         82]
+NotebookOutlinePosition[      3176,         99]
+CellTagsIndexPosition[      3133,         96]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"n\:786e\:5b9a\:65f6", "\:ff0c", 
+   RowBox[{
+    SuperscriptBox["i\:7684\:8303\:56f4\:5e94\:4e3a10", 
+     RowBox[{"Floor", "[", 
+      RowBox[{"9", "/", "n"}], "]"}]], "-", "1"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.8710909123439636`*^9, 3.8710909446829586`*^9}, {
+  3.8710914610506124`*^9, 3.8710915412395396`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"b7d6e6e1-355b-4970-b62e-4cdde7c66cc4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"PandigitalQ", "[", "n_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"DigitCount", "[", "n", "]"}], "==", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", 
+      "1", ",", "1", ",", "0"}], "}"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"IntegerDigits", "[", 
+           RowBox[{"i", " ", "k"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], "//", 
+        "Flatten"}], "//", "FromDigits"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "2", ",", "9"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", 
+        RowBox[{
+         SuperscriptBox["10", 
+          RowBox[{"Floor", "[", 
+           RowBox[{"9", "/", "n"}], "]"}]], "-", "1"}]}], "}"}]}], "]"}], "//",
+     "Flatten"}], "//", 
+   RowBox[{
+    RowBox[{"Select", "[", 
+     RowBox[{"#", ",", "PandigitalQ"}], "]"}], "&"}]}], "//", 
+  "Max"}]}], "Input",
+ CellChangeTimes->{{3.8710915529452534`*^9, 3.871091594329172*^9}, {
+  3.8710916321860223`*^9, 3.8710916343228736`*^9}, {3.871091684301016*^9, 
+  3.871091794898716*^9}, {3.8710918292857513`*^9, 3.8710919466454725`*^9}, {
+  3.8710920677869368`*^9, 3.8710922370532856`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"636edafc-3522-4783-809e-5b4b8eaefe05"],
+
+Cell[BoxData["932718654"], "Output",
+ CellChangeTimes->{
+  3.871091949141182*^9, {3.8710921855054455`*^9, 3.871092238020797*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"09747ff9-9719-48e2-a1af-d5e516222053"]
+}, Open  ]]
+},
+WindowSize->{590, 659},
+WindowMargins->{{Automatic, 13}, {Automatic, 128}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"30064a8f-4ac9-45ea-b0a0-ecf36e6318d2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 442, 9, 37, "Input",ExpressionUUID->"b7d6e6e1-355b-4970-b62e-4cdde7c66cc4"],
+Cell[CellGroupData[{
+Cell[1025, 33, 1511, 41, 190, "Input",ExpressionUUID->"636edafc-3522-4783-809e-5b4b8eaefe05"],
+Cell[2539, 76, 208, 3, 59, "Output",ExpressionUUID->"09747ff9-9719-48e2-a1af-d5e516222053"]
+}, Open  ]]
+}
+]
+*)
+
