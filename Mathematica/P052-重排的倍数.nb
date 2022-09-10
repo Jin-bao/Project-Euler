@@ -1,0 +1,81 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2059,         73]
+NotebookOptionsPosition[      1568,         55]
+NotebookOutlinePosition[      1981,         72]
+CellTagsIndexPosition[      1938,         69]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"PermutedMultiplesQ", "[", "n_Integer", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"Length", "[", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"Sort", "[", 
+         RowBox[{"IntegerDigits", "[", 
+          RowBox[{"i", " ", "n"}], "]"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", "6"}], "}"}]}], "]"}], "//", 
+      "DeleteDuplicates"}], "]"}], "==", "1"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"NestWhile", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"#", "+", "1"}], "&"}], ",", "1", ",", 
+   RowBox[{
+    RowBox[{"Not", "[", 
+     RowBox[{"PermutedMultiplesQ", "[", "#", "]"}], "]"}], "&"}]}], 
+  "]"}]}], "Input",
+ CellLabel->
+  "In[157]:=",ExpressionUUID->"8305d06b-131f-439e-b532-ac5ab0582654"],
+
+Cell[BoxData["142857"], "Output",
+ CellChangeTimes->{3.8717837848652678`*^9},
+ CellLabel->
+  "Out[158]=",ExpressionUUID->"3fa3027a-0aed-4116-bb3c-93c89f1b78fb"]
+}, Open  ]]
+},
+WindowSize->{590, 691},
+WindowMargins->{{Automatic, 35}, {104, Automatic}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5247ea15-6301-4fe0-a1dd-732c62ee718a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 809, 25, 173, "Input",ExpressionUUID->"8305d06b-131f-439e-b532-ac5ab0582654"],
+Cell[1392, 49, 160, 3, 59, "Output",ExpressionUUID->"3fa3027a-0aed-4116-bb3c-93c89f1b78fb"]
+}, Open  ]]
+}
+]
+*)
+
