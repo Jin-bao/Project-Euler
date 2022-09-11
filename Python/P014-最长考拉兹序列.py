@@ -1,8 +1,5 @@
-def Collatz(num:int, CollatzDict:dict={}) -> int:
+def Collatz(num:int, CollatzDict:dict={1: 1}) -> int:
   if num in CollatzDict:
-    return CollatzDict[num]
-  if num == 1:
-    CollatzDict[num] = 1
     return CollatzDict[num]
   if num%2 == 0:
     CollatzDict[num] = Collatz(int(num/2))+1
