@@ -4,9 +4,9 @@ function main()
     word = parse.(Int,txt)
     f = open("p059_decipher.txt","w")
     good = similar(word)
-    for key in Iterators.product(code,code,code)
-        for id in eachindex(word)
-            good[id] = xor(word[id],key[(id-1)%3+1])
+    for keys in Iterators.product(code,code,code)
+        for (id,key) in zip(eachindex(word),Iterators.cycle(keys))
+            good[id] = xor(word[id],key)
         end
         write(f,join(Char.(good)),'\n')
     end
