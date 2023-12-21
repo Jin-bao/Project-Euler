@@ -16,10 +16,8 @@ prime_list3 = [i for i in range(2, int(N**(1/3))+1) if primeQ(i)]
 prime_list4 = [i for i in range(2, int(N**0.25) +1) if primeQ(i)]
 
 nums = set()
-for i in prime_list2:
-  for j in prime_list3:
-    for k in prime_list4:
-      res = i**2 + j**3 + k**4
-      if res<N:
-        nums.add(res)
+for i,j,k in zip(prime_list2,prime_list3,prime_list4):
+  res = i**2 + j**3 + k**4
+  if res<N:
+    nums.add(res)
 print(len(nums))
